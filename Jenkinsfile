@@ -13,7 +13,7 @@ pipeline{
 		}
 		stage("Run Test"){
 			steps{
-				sh "docker-compose up SmokeTestSuite.xml"
+				sh "docker-compose up smoke-module"
 			}
 		}
 	}
